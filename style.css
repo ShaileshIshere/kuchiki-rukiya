@@ -6,15 +6,17 @@
 html, body{
     height: 100%;
     width: 100%;
-}
-#main{
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #000;
     color: #fff;
 }
+#main{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #navbar{
+    height: 10vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +25,7 @@ html, body{
 #navbar h2{
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 #social{
     display: flex;
@@ -63,4 +65,34 @@ img{
 }
 #img2{
     rotate: 10deg;
+}
+
+/* media queries for smaller screen */
+@media (width <= 430px) {
+    
+    #navbar{
+        margin-top: 0.5vh;
+        height: 4vh;
+        width: 100%;
+    }
+    #navbar h2{
+        font-size: 0.7em;
+        font-weight: 100;
+    }
+    #social{
+        gap: 1em;
+    }
+    #main h1{
+        font-size: 2.5em;
+        line-height: 9vw;
+        top: 15vh;
+    }
+    img{
+        top: 30vh;
+        left: 37vw;
+        height: 35vh;
+        width: 15vh;
+        border-radius: 0.8em;
+    }
+    
 }
